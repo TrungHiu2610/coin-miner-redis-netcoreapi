@@ -1,0 +1,462 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\controllers\\minecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\controllers\\minecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\services\\redishubbridgeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\services\\redishubbridgeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\services\\redisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\services\\redisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\models\\gameevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\models\\gameevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\controllers\\boostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\controllers\\boostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\services\\leaderboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\services\\leaderboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\services\\tickservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\services\\tickservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\controllers\\leaderboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\controllers\\leaderboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\models\\shops\\boost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\models\\shops\\boost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\models\\gameeventtypeconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\models\\gameeventtypeconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\models\\gameconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\models\\gameconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\models\\redisdbschemaconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\models\\redisdbschemaconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\models\\userinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\models\\userinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\models\\userdbschemaconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\models\\userdbschemaconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\models\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\models\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|d:\\monhoc\\namcuoicung\\dulieunosql\\doan\\coinminergame\\backend\\coinminergame.backend\\coinminergame.backend\\models\\shops\\machine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0EA93FD-B2CE-43A7-A1AC-E0F1AD67A038}|CoinMinerGame.Backend\\CoinMinerGame.Backend.csproj|solutionrelative:coinminergame.backend\\models\\shops\\machine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 199,
+          "SelectedChildIndex": 23,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Program.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Program.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Program.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T03:22:46.567Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserDbSchemaConstant.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Models\\UserDbSchemaConstant.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Models\\UserDbSchemaConstant.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Models\\UserDbSchemaConstant.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Models\\UserDbSchemaConstant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T09:01:44.088Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T03:30:58.458Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameEvent.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Models\\GameEvent.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Models\\GameEvent.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Models\\GameEvent.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Models\\GameEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T15:54:13.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RedisService.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Services\\RedisService.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Services\\RedisService.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Services\\RedisService.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Services\\RedisService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T15:54:38.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SessionService.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Services\\SessionService.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Services\\SessionService.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Services\\SessionService.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Services\\SessionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T12:13:09.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Services\\JwtService.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Services\\JwtService.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Services\\JwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T14:50:25.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserInventory.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Models\\UserInventory.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Models\\UserInventory.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Models\\UserInventory.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Models\\UserInventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T14:50:20.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Machine.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Models\\Shops\\Machine.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Models\\Shops\\Machine.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Models\\Shops\\Machine.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Models\\Shops\\Machine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T14:50:02.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LeaderboardService.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Services\\LeaderboardService.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Services\\LeaderboardService.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Services\\LeaderboardService.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Services\\LeaderboardService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAMwCIAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T14:47:36.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TickService.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Services\\TickService.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Services\\TickService.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Services\\TickService.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Services\\TickService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAgwFIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T14:33:24.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Boost.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Models\\Shops\\Boost.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Models\\Shops\\Boost.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Models\\Shops\\Boost.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Models\\Shops\\Boost.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T12:36:03.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\appsettings.json",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\appsettings.json",
+              "RelativeToolTip": "CoinMinerGame.Backend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-19T12:21:39.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "InventoryController.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Controllers\\InventoryController.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Controllers\\InventoryController.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Controllers\\InventoryController.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Controllers\\InventoryController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAewC0AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T11:50:41.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BoostController.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Controllers\\BoostController.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Controllers\\BoostController.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Controllers\\BoostController.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Controllers\\BoostController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T11:43:37.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RedisHubBridgeService.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Services\\RedisHubBridgeService.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Services\\RedisHubBridgeService.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Services\\RedisHubBridgeService.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Services\\RedisHubBridgeService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwBUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T11:42:36.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GameHub.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Hubs\\GameHub.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Hubs\\GameHub.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Hubs\\GameHub.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Hubs\\GameHub.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwCQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T09:42:31.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GameEventTypeConstant.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Models\\GameEventTypeConstant.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Models\\GameEventTypeConstant.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Models\\GameEventTypeConstant.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Models\\GameEventTypeConstant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T09:30:07.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Controllers\\UserController.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Controllers\\UserController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAjwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T09:19:23.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RedisDbSchemaConstant.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Models\\RedisDbSchemaConstant.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Models\\RedisDbSchemaConstant.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Models\\RedisDbSchemaConstant.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Models\\RedisDbSchemaConstant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T09:01:29.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LeaderboardController.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Controllers\\LeaderboardController.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Controllers\\LeaderboardController.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Controllers\\LeaderboardController.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Controllers\\LeaderboardController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAuwCMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T04:36:09.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MineController.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Controllers\\MineController.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Controllers\\MineController.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Controllers\\MineController.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Controllers\\MineController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T04:35:33.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GameConstant.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Models\\GameConstant.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Models\\GameConstant.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Models\\GameConstant.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Models\\GameConstant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T03:36:24.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AuthDto.cs",
+              "DocumentMoniker": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Models\\AuthDto.cs",
+              "RelativeDocumentMoniker": "CoinMinerGame.Backend\\Models\\AuthDto.cs",
+              "ToolTip": "D:\\MonHoc\\NamCuoiCung\\DuLieuNoSQL\\DoAn\\CoinMinerGame\\Backend\\CoinMinerGame.Backend\\CoinMinerGame.Backend\\Models\\AuthDto.cs",
+              "RelativeToolTip": "CoinMinerGame.Backend\\Models\\AuthDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T03:31:14.241Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 86,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 185,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

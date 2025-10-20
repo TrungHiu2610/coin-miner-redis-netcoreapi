@@ -1,0 +1,6 @@
+@CoinMinerGame.Backend_HostAddress = http://localhost:7238
+
+GET {{CoinMinerGame.Backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

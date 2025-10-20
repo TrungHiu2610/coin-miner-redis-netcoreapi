@@ -1,0 +1,106 @@
+[
+  {
+    "ContainingType": "CoinMinerGame.Backend.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "CoinMinerGame.Backend.Models.AuthDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CoinMinerGame.Backend.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "CoinMinerGame.Backend.Models.AuthDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CoinMinerGame.Backend.Controllers.BoostController",
+    "Method": "ActivateBoost",
+    "RelativePath": "api/Boost/activate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "boost",
+        "Type": "CoinMinerGame.Backend.Models.Shops.Boost",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CoinMinerGame.Backend.Controllers.InventoryController",
+    "Method": "BuyMachine",
+    "RelativePath": "api/Inventory/buy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "machine",
+        "Type": "CoinMinerGame.Backend.Models.Shops.Machine",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CoinMinerGame.Backend.Controllers.LeaderboardController",
+    "Method": "GetTop10",
+    "RelativePath": "api/Leaderboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CoinMinerGame.Backend.Controllers.MineController",
+    "Method": "Mine",
+    "RelativePath": "api/Mine",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CoinMinerGame.Backend.Controllers.UserController",
+    "Method": "GetCurrentUserCoinHistory",
+    "RelativePath": "api/User/history",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CoinMinerGame.Backend.Controllers.UserController",
+    "Method": "GetCurrentUserState",
+    "RelativePath": "api/User/state",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

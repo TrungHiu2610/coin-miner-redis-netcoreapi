@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "H5T58Tu5fsDTJwOn7LmD3VuPi82aTBW/FSo+Wjh7qmE=",
+  "Source": "CoinMinerGame.Backend",
+  "BasePath": "_content/CoinMinerGame.Backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
