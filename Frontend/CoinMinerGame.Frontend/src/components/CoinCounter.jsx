@@ -22,7 +22,7 @@ export default function CoinCounter({ coins, cps }) {
         {formatNumber(coins)}
       </h2>
       <p className="text-slate-400 mt-2">
-        + {formatNumber(lastValidCps)} coins/secc
+        + {formatNumber(lastValidCps)} coins/seccc
       </p>
     </div>
   );
