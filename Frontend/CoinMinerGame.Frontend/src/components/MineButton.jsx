@@ -12,11 +12,12 @@ export default function MineButton({ token }) {
   return (
     <div className="flex justify-center">
       <button
-        className="w-48 h-48 sm:w-64 sm:h-64 rounded-full bg-gradient-to-br from-amber-400 to-orange-600 text-white font-bold text-2xl shadow-lg shadow-orange-500/20 transform transition-transform duration-150 active:scale-90 hover:scale-105 flex flex-col justify-center items-center"
+        className="neon-button h-48 w-48 flex-col gap-3 sm:h-60 sm:w-60"
         onClick={handleClick}
       >
         <span className="text-5xl mb-2">⛏️</span>
-        MINE
+        <span className="text-xs tracking-[0.25em]">Tap To</span>
+        <span className="text-lg tracking-[0.4em]">Mine</span>
       </button>
     </div>
   );

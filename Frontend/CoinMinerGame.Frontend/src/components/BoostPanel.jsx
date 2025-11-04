@@ -28,7 +28,7 @@ export default function BoostPanel({ currentCoins, onPurchase }) {
     try {
       const res = await api.activateBoost(boost);
       if (res.status >= 200 && res.status < 300) {
-        toast.success(`${boost.name} activated!`, { icon: "🚀" });
+        toast.success(`${boost.name} activated!`, { icon: ">>" });
         onPurchase();
       } else {
         const err = await res.json();
@@ -45,13 +45,20 @@ export default function BoostPanel({ currentCoins, onPurchase }) {
         {AVAILABLE_BOOSTS.map((boost) => (
           <div
             key={boost.name}
-            className="flex justify-between items-center bg-slate-900/50 p-3 rounded-lg"
+            className="flex items-center justify-between rounded-xl border border-purple-400/20 bg-slate-900/70 px-4 py-3 transition hover:border-purple-400/40 hover:bg-slate-900/80"
           >
-            <p className="font-bold">{boost.name}</p>
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-purple-200">
+                {boost.name}
+              </p>
+              <p className="text-xs text-slate-400">
+                Duration: {boost.duration}s / x{boost.multiplier}
+              </p>
+            </div>
             <button
               onClick={() => handleActivate(boost)}
               disabled={currentCoins < boost.cost}
-              className="px-3 py-1 text-sm font-semibold bg-purple-600 hover:bg-purple-500 rounded-md disabled:bg-slate-600 disabled:cursor-not-allowed transition-colors"
+              className="rounded-full border border-purple-400/40 bg-purple-500/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-purple-100 transition hover:border-purple-400 hover:bg-purple-500/30 disabled:border-slate-500 disabled:bg-slate-800/60 disabled:text-slate-500 disabled:hover:border-slate-500 disabled:hover:bg-slate-800/60"
             >
               {boost.cost.toLocaleString()}
             </button>

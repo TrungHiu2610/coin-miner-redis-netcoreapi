@@ -29,24 +29,32 @@ export default function Leaderboard({ connection }) {
   }, [connection]);
 
   return (
-    <Card title="🏆 Leaderboard">
+    <Card title="Galactic Leaderboard">
       {!topUsers ? (
         <Spinner />
       ) : (
-        <ol className="space-y-2">
-          {topUsers.map((u, index) => (
-            <li
-              key={u.userId}
-              className="flex justify-between items-baseline text-sm p-2 rounded-md bg-slate-900/50"
-            >
-              <span className="font-semibold truncate">
-                {index + 1}. {u.username}
-              </span>
-              <span className="font-bold text-amber-400">
-                {u.coins.toLocaleString()}
-              </span>
-            </li>
-          ))}
+        <ol className="space-y-2 text-xs uppercase tracking-[0.2em] text-slate-300/80">
+          {topUsers.map((u, index) => {
+            const badges = ["TOP-1", "TOP-2", "TOP-3"];
+            const isTopThree = index < 3;
+
+            return (
+              <li
+                key={u.userId}
+                className="flex items-center justify-between rounded-lg border border-cyan-400/20 bg-slate-950/60 px-3 py-2"
+              >
+                <div className="flex items-center gap-2 truncate">
+                  <span className="rounded-full border border-cyan-400/30 bg-cyan-500/20 px-2 py-1 text-[10px] font-semibold text-cyan-200">
+                    {isTopThree ? badges[index] : `#${index + 1}`}
+                  </span>
+                  <span className="truncate text-slate-200">{u.username}</span>
+                </div>
+                <span className="font-semibold text-amber-300">
+                  {u.coins.toLocaleString()}
+                </span>
+              </li>
+            );
+          })}
         </ol>
       )}
     </Card>

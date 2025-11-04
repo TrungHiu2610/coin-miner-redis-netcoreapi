@@ -35,16 +35,20 @@ export default function Inventory({ token, currentCoins, onPurchase }) {
         {AVAILABLE_MACHINES.map((machine) => (
           <div
             key={machine.name}
-            className="flex justify-between items-center bg-slate-900/50 p-3 rounded-lg"
+            className="flex items-center justify-between rounded-xl border border-cyan-400/15 bg-slate-900/70 px-4 py-3 transition hover:border-cyan-400/35 hover:bg-slate-900/80"
           >
             <div>
-              <p className="font-bold">{machine.name}</p>
-              <p className="text-sm text-cyan-400">+ {machine.cps} CPS</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">
+                {machine.name}
+              </p>
+              <p className="text-xs text-slate-400">
+                Output Boost: +{machine.cps} cps
+              </p>
             </div>
             <button
               onClick={() => handleBuy(machine)}
               disabled={currentCoins < machine.cost}
-              className="px-3 py-1 text-sm font-semibold bg-cyan-600 hover:bg-cyan-500 rounded-md disabled:bg-slate-600 disabled:cursor-not-allowed transition-colors"
+              className="rounded-full border border-teal-400/40 bg-teal-500/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-teal-200 transition hover:border-teal-300 hover:bg-teal-400/30 disabled:border-slate-500 disabled:bg-slate-800/60 disabled:text-slate-500 disabled:hover:border-slate-500 disabled:hover:bg-slate-800/60"
             >
               {machine.cost.toLocaleString()}
             </button>

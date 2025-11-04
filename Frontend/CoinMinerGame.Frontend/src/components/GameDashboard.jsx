@@ -55,16 +55,16 @@ export default function GameDashboard({ user, connection, onLogout }) {
         msg.trim() !== "" &&
         msg.includes("leader")
       ) {
-        toast(msg, { icon: "🏆" });
+        toast(msg, { icon: "!!" });
       }
-      // notify when user has earned a offline coins reward
+      // notify when user has earned an offline coins reward
       else if (
         msg &&
         typeof msg === "string" &&
         msg.trim() !== "" &&
         msg.includes("offline")
       ) {
-        toast(msg, { icon: "💰" });
+        toast(msg, { icon: "::" });
       }
     };
 
@@ -84,21 +84,24 @@ export default function GameDashboard({ user, connection, onLogout }) {
   if (!userState) return <Spinner />;
 
   return (
-    <div className="space-y-6">
-      <div className="flex justify-between items-center bg-slate-800/50 p-4 rounded-xl border border-slate-700">
-        <h2 className="text-xl sm:text-2xl font-semibold">
-          Welcome, <span className="text-cyan-400">{userState.username}</span>!
-        </h2>
+    <div className="space-y-6 text-slate-200">
+      <div className="relative flex items-center justify-between gap-4 overflow-hidden rounded-2xl border border-cyan-400/20 bg-slate-950/70 px-6 py-5 shadow-[0_10px_30px_rgba(8,47,73,0.45)]">
+        <div>
+          <h2 className="mt-2 text-2xl font-semibold text-slate-50">
+            Welcome,{" "}
+            <span className="text-cyan-300">{userState.username}</span>
+          </h2>
+        </div>
         <button
           onClick={onLogout}
-          className="px-4 py-2 bg-red-600 hover:bg-red-700 rounded-lg font-bold transition-colors"
+          className="rounded-full border border-red-400/40 bg-red-500/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-red-200 transition hover:border-red-400 hover:bg-red-500/30"
         >
           Logout
         </button>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-1 lg:col-start-2 space-y-6">
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+        <div className="space-y-6 lg:col-span-1 lg:col-start-2">
           <CoinCounter
             coins={userState.coins}
             cps={userState.coins_per_second}
@@ -110,7 +113,7 @@ export default function GameDashboard({ user, connection, onLogout }) {
           />
         </div>
 
-        <div className="lg:col-span-1 lg:row-start-1 lg:col-start-1 space-y-6">
+        <div className="space-y-6 lg:col-span-1 lg:col-start-1 lg:row-start-1">
           <Inventory
             token={user.token}
             currentCoins={userState.coins}
@@ -118,7 +121,7 @@ export default function GameDashboard({ user, connection, onLogout }) {
           />
         </div>
 
-        <div className="lg:col-span-1 lg:row-start-1 lg:col-start-3 space-y-6">
+        <div className="space-y-6 lg:col-span-1 lg:col-start-3 lg:row-start-1">
           <Leaderboard connection={connection} />
           <CoinChart
             userId={user.userId}

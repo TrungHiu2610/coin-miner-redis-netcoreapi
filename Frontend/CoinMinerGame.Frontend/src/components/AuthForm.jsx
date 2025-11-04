@@ -49,55 +49,76 @@ export default function AuthForm({ onAuth }) {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10">
-      <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl shadow-lg p-8">
-        <h2 className="text-3xl font-bold text-center mb-6">
-          {isRegister ? "Create Account" : "Login"}
-        </h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <input
-            className="w-full p-3 bg-slate-700 rounded-lg border border-slate-600 focus:outline-none focus:ring-2 focus:ring-cyan-400"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-          <input
-            className="w-full p-3 bg-slate-700 rounded-lg border border-slate-600 focus:outline-none focus:ring-2 focus:ring-cyan-400"
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-          {isRegister && (
-            <input
-              className="w-full p-3 bg-slate-700 rounded-lg border border-slate-600 focus:outline-none focus:ring-2 focus:ring-cyan-400"
-              type="password"
-              placeholder="Confirm Password"
-              value={confirmPassword}
-              onChange={(e) => setConfirmPassword(e.target.value)}
-              required
-            />
-          )}
-          <button
-            type="submit"
-            disabled={isLoading}
-            className="w-full p-3 font-bold text-white bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 disabled:opacity-50"
-          >
-            {isLoading ? "Processing..." : isRegister ? "Register" : "Login"}
-          </button>
-        </form>
-        <p className="text-center mt-4 text-sm">
-          <span
-            className="text-cyan-400 hover:text-cyan-300 cursor-pointer"
-            onClick={() => setIsRegister(!isRegister)}
-          >
-            {isRegister
-              ? "Already have an account? Login"
-              : "Don't have an account? Register"}
-          </span>
-        </p>
+    <div className="mx-auto mt-10 max-w-lg">
+      <div className="holo-card">
+        <div className="holo-card__inner p-6 sm:p-8">
+          <div className="text-center">
+            <p className="text-xs uppercase tracking-[0.35em] text-teal-200/70">
+              {isRegister ? "New Pilot Registration" : "Secure Hangar Access"}
+            </p>
+            <h2 className="mt-4 text-2xl sm:text-3xl font-arcade text-amber-300">
+              {isRegister ? "Create Account" : "Login"}
+            </h2>
+          </div>
+
+          <form onSubmit={handleSubmit} className="mt-6 space-y-4">
+            <label className="block space-y-2 text-sm">
+              <span className="text-slate-300/80">Username</span>
+              <input
+                className="w-full rounded-lg border border-cyan-400/30 bg-slate-900/60 px-4 py-3 font-medium tracking-wide text-slate-200 outline-none transition focus:border-cyan-300 focus:ring-2 focus:ring-cyan-300/60"
+                placeholder="Username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                required
+              />
+            </label>
+            <label className="block space-y-2 text-sm">
+              <span className="text-slate-300/80">Password</span>
+              <input
+                className="w-full rounded-lg border border-cyan-400/30 bg-slate-900/60 px-4 py-3 font-medium tracking-wide text-slate-200 outline-none transition focus:border-cyan-300 focus:ring-2 focus:ring-cyan-300/60"
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+            </label>
+            {isRegister && (
+              <label className="block space-y-2 text-sm">
+                <span className="text-slate-300/80">Confirm Password</span>
+                <input
+                  className="w-full rounded-lg border border-cyan-400/30 bg-slate-900/60 px-4 py-3 font-medium tracking-wide text-slate-200 outline-none transition focus:border-cyan-300 focus:ring-2 focus:ring-cyan-300/60"
+                  type="password"
+                  placeholder="Confirm Password"
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
+                  required
+                />
+              </label>
+            )}
+            <button
+              type="submit"
+              disabled={isLoading}
+              className="neon-button w-full py-4 text-base tracking-[0.2em] disabled:cursor-not-allowed disabled:opacity-70"
+            >
+              <span>
+                {isLoading ? "Processing..." : isRegister ? "Register" : "Login"}
+              </span>
+            </button>
+          </form>
+
+          <div className="mt-6 text-center text-sm">
+            <button
+              type="button"
+              className="inline-flex items-center gap-2 text-cyan-300 transition hover:text-cyan-200"
+              onClick={() => setIsRegister(!isRegister)}
+            >
+              <span className="text-xs uppercase tracking-[0.3em]">
+                {isRegister ? "Back To Login" : "Create New Account"}
+              </span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
