@@ -16,6 +16,7 @@ services.AddEndpointsApiExplorer();
 services.AddSwaggerGen();
 
 // inject services
+services.AddSingleton<ShopConfigService>();
 services.AddSingleton<RedisService>();
 services.AddSingleton<LeaderboardService>();
 services.AddSingleton<JwtService>();

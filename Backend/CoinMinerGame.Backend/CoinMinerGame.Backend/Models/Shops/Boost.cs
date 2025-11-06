@@ -6,5 +6,6 @@
         public int Multiplier { get; set; }
         public int Duration { get; set; } 
         public int Cost { get; set; }
+        public string Name { get; set; } = default!;
     }
 }

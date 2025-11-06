@@ -15,49 +15,59 @@ namespace CoinMinerGame.Backend.Controllers
     {
         private readonly RedisService _redis;
         private readonly SessionService _sessionService;
+        private readonly ShopConfigService _shopConfig;
 
-        public InventoryController(RedisService redis, SessionService sessionService)
+
+        public InventoryController(RedisService redis, SessionService sessionService, ShopConfigService shopConfig)
         {
             _redis = redis;
             _sessionService = sessionService;
+            _shopConfig = shopConfig;
         }
 
         [HttpPost("buy")]
-        public async Task<IActionResult> BuyMachine([FromBody] Machine machine)
+        public async Task<IActionResult> BuyMachine([FromBody] Machine clientMachine)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (string.IsNullOrEmpty(userId)) return Unauthorized();
 
             var userStateKey = string.Format(RedisDbSchemaConstant.UserStateHash, userId);
 
+            var machineConfig = _shopConfig.GetMachine(clientMachine.Name);
+            if (machineConfig == null)
+            {
+                return BadRequest(new { message = "Invalid machine." });
+            }
+
             var currentCoins = (double)await _redis.Db.HashGetAsync(userStateKey, UserDbSchemaConstant.Coins);
 
-            if (currentCoins < machine.Cost)
+            if (currentCoins < machineConfig.Cost)
             {
                 return BadRequest(new { message = "Not enough coins." });
             }
 
-            var newTotalCoins = await _redis.Db.HashDecrementAsync(userStateKey, UserDbSchemaConstant.Coins, machine.Cost);
+            var newTotalCoins = await _redis.Db.HashDecrementAsync(userStateKey, UserDbSchemaConstant.Coins, machineConfig.Cost);
+
             await _sessionService.UpdateUserLastActive(userId);
 
             var inventoryKey = string.Format(RedisDbSchemaConstant.UserInventoryKey, userId);
 
-            // parse machine to json string
-            string jsonMachine = System.Text.Json.JsonSerializer.Serialize(machine);
+            string jsonMachine = System.Text.Json.JsonSerializer.Serialize(machineConfig);
+            await _redis.Db.JsonArrayAppendAsync(inventoryKey, path: ".Machines", json: jsonMachine);
 
-            await _redis.Db.JsonArrayAppendAsync(inventoryKey, path:".Machines", json: jsonMachine);
+            var newCoinsPerSecond = await _redis.Db.HashIncrementAsync(userStateKey, UserDbSchemaConstant.CoinsPerSecond, machineConfig.Cps);
 
-            var newCoinsPerSecond = await _redis.Db.HashIncrementAsync(userStateKey, UserDbSchemaConstant.CoinsPerSecond, machine.Cps);
+            var coinEventPayload = new CoinChangedPayload(userId, newTotalCoins, $"Purchased {machineConfig.Name}.", newCoinsPerSecond);
 
-            var coinEventPayload = new CoinChangedPayload(userId, newTotalCoins, $"Purchased {machine.Name}.", newCoinsPerSecond);
             var coinEvent = new GameEvent<CoinChangedPayload>
             {
                 Type = GameEventTypeConstant.PurchaseMade,
                 Payload = coinEventPayload
             };
+
             await _redis.Subscriber.PublishAsync("game-events", coinEvent.Serialize());
 
-            return Ok(new { message = $"Successfully purchased {machine.Name}" });
+            return Ok(new { message = $"Successfully purchased {machineConfig.Name}" });
         }
     }
 }
