@@ -59,4 +59,7 @@ export const api = {
   mine: () => apiClient.post("/api/mine"),
   buyMachine: (machine) => apiClient.post("/api/inventory/buy", machine),
   activateBoost: (boost) => apiClient.post("/api/boost/activate", boost),
+
+  getMachines: () => apiClient.get("/api/shop/machines"),
+  getBoosts: () => apiClient.get("/api/shop/boosts"),
 };

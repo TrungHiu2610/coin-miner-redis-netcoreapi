@@ -53,9 +53,6 @@ export default function AuthForm({ onAuth }) {
       <div className="holo-card">
         <div className="holo-card__inner p-6 sm:p-8">
           <div className="text-center">
-            <p className="text-xs uppercase tracking-[0.35em] text-teal-200/70">
-              {isRegister ? "New Pilot Registration" : "Secure Hangar Access"}
-            </p>
             <h2 className="mt-4 text-2xl sm:text-3xl font-arcade text-amber-300">
               {isRegister ? "Create Account" : "Login"}
             </h2>

@@ -13,6 +13,13 @@ import Spinner from "./Spinner";
 export default function GameDashboard({ user, connection, onLogout }) {
   const [userState, setUserState] = useState(null);
 
+  const [activeBoosts, setActiveBoosts] = useState({
+    click: null,
+    passive: null,
+  });
+
+  const [now, setNow] = useState(() => Date.now());
+
   const fetchUserState = async () => {
     try {
       const response = await api.getUserState();
@@ -30,6 +37,29 @@ export default function GameDashboard({ user, connection, onLogout }) {
   useEffect(() => {
     fetchUserState();
   }, [user.token]);
+
+  useEffect(() => {
+    const id = setInterval(() => setNow(Date.now()), 1000);
+    return () => clearInterval(id);
+  }, []);
+
+  useEffect(() => {
+    setActiveBoosts((prev) => {
+      const current = Date.now();
+      const updated = { ...prev };
+      let changed = false;
+
+      ["click", "passive"].forEach((type) => {
+        const b = prev[type];
+        if (b && b.expiresAt <= current) {
+          updated[type] = null;
+          changed = true;
+        }
+      });
+
+      return changed ? updated : prev;
+    });
+  }, [now]);
 
   useEffect(() => {
     if (!connection) return;
@@ -56,9 +86,7 @@ export default function GameDashboard({ user, connection, onLogout }) {
         msg.includes("leader")
       ) {
         toast(msg, { icon: "!!" });
-      }
-      // notify when user has earned an offline coins reward
-      else if (
+      } else if (
         msg &&
         typeof msg === "string" &&
         msg.trim() !== "" &&
@@ -81,15 +109,59 @@ export default function GameDashboard({ user, connection, onLogout }) {
     };
   }, [connection, user.userId]);
 
+  const handleBoostActivated = (boost) => {
+    const expiresAt = Date.now() + boost.duration * 1000;
+
+    setActiveBoosts((prev) => ({
+      ...prev,
+      [boost.type]: {
+        ...boost,
+        expiresAt,
+      },
+    }));
+
+    fetchUserState();
+  };
+
   if (!userState) return <Spinner />;
+
+  const parseNumber = (value, fallback = 0) => {
+    const parsed = Number(value);
+    return Number.isFinite(parsed) ? parsed : fallback;
+  };
+
+  const reportedCps = parseNumber(userState.coins_per_second);
+
+  const getActiveBoost = (boost) => {
+    if (!boost || !boost.expiresAt) return null;
+    return boost.expiresAt > now ? boost : null;
+  };
+
+  const withRemaining = (boost) => {
+    if (!boost) return null;
+    const remainingSeconds = Math.max(
+      0,
+      Math.ceil((boost.expiresAt - now) / 1000)
+    );
+    return remainingSeconds > 0 ? { ...boost, remainingSeconds } : null;
+  };
+
+  const passiveActive = getActiveBoost(activeBoosts.passive);
+  const passiveBoostInfo = withRemaining(passiveActive);
+
+  const effectiveCps = reportedCps;
+  const baseCps =
+    passiveActive && passiveActive.multiplier > 0
+      ? reportedCps / passiveActive.multiplier
+      : reportedCps;
 
   return (
     <div className="space-y-6 text-slate-200">
+      {/* Thanh welcome + logout */}
       <div className="relative flex items-center justify-between gap-4 overflow-hidden rounded-2xl border border-cyan-400/20 bg-slate-950/70 px-6 py-5 shadow-[0_10px_30px_rgba(8,47,73,0.45)]">
         <div>
           <h2 className="mt-2 text-2xl font-semibold text-slate-50">
-            Welcome,{" "}
-            <span className="text-cyan-300">{userState.username}</span>
+            Welcome, <span className="text-cyan-300">{userState.username}</span>
           </h2>
         </div>
         <button
@@ -101,18 +173,25 @@ export default function GameDashboard({ user, connection, onLogout }) {
       </div>
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+        {/* Cột giữa: balance + mine + boosters */}
         <div className="space-y-6 lg:col-span-1 lg:col-start-2">
           <CoinCounter
             coins={userState.coins}
-            cps={userState.coins_per_second}
+            baseCps={baseCps}
+            effectiveCps={effectiveCps}
+            passiveBoost={passiveBoostInfo}
           />
           <MineButton token={user.token} />
           <BoostPanel
             currentCoins={userState.coins}
             onPurchase={fetchUserState}
+            activeBoosts={activeBoosts}
+            now={now}
+            onBoostActivated={handleBoostActivated}
           />
         </div>
 
+        {/* Cột trái: machine shop */}
         <div className="space-y-6 lg:col-span-1 lg:col-start-1 lg:row-start-1">
           <Inventory
             token={user.token}
@@ -121,6 +200,7 @@ export default function GameDashboard({ user, connection, onLogout }) {
           />
         </div>
 
+        {/* Cột phải: leaderboard + chart */}
         <div className="space-y-6 lg:col-span-1 lg:col-start-3 lg:row-start-1">
           <Leaderboard connection={connection} />
           <CoinChart
